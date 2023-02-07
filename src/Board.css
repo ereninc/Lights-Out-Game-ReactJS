@@ -1,0 +1,133 @@
+.Board {
+  margin: 0 auto;
+  box-shadow: 0 0 50px #fff, -10px 0 80px #f0f, 10px 0 80px #0ff;
+  border-radius: 12px;
+}
+
+table tr:first-child td:first-child {
+  border-top-left-radius: 12px !important;
+}
+table tr:first-child td:last-child {
+  border-top-right-radius: 12px !important;
+}
+table tr:last-child td:first-child {
+  border-bottom-left-radius: 12px !important;
+}
+table tr:last-child td:last-child {
+  border-bottom-right-radius: 12px !important;
+}
+
+.container {
+  margin: 150px auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+}
+
+@font-face {
+  font-family: neon;
+  src: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/707108/neon.ttf);
+}
+
+.neon-orange {
+  font-family: neon;
+  color: #fb4264;
+  font-size: 12vw;
+  line-height: 9vw;
+  text-shadow: 0 0 3vw #f40a35;
+  animation: neon-orange 1s ease infinite;
+  -moz-animation: neon-orange 1s ease infinite;
+  -webkit-animation: neon-orange 1s ease infinite;
+}
+
+@keyframes neon-orange {
+  0%,
+  100% {
+    text-shadow: 0 0 1vw #fa1c16, 0 0 3vw #fa1c16, 0 0 10vw #fa1c16,
+      0 0 10vw #fa1c16, 0 0 0.4vw #fed128, 0.5vw 0.5vw 0.1vw #806914;
+    color: #fed128;
+  }
+  50% {
+    text-shadow: 0 0 0.5vw #800e0b, 0 0 1.5vw #800e0b, 0 0 5vw #800e0b,
+      0 0 5vw #800e0b, 0 0 0.2vw #800e0b, 0.5vw 0.5vw 0.1vw #40340a;
+    color: #806914;
+  }
+}
+
+.neon-blue {
+  transform: rotate(15deg);
+  font-family: neon;
+  color: #426dfb;
+  font-size: 12vw;
+  line-height: 9vw;
+  text-shadow: 0 0 3vw #2356ff;
+  animation: neon-blue 2s linear infinite;
+  -moz-animation: neon-blue 2s linear infinite;
+  -webkit-animation: neon-blue 2s linear infinite;
+  -o-animation: neon-blue 2s linear infinite;
+}
+
+@keyframes neon-blue {
+  0%,
+  100% {
+    text-shadow: 0 0 1vw #1041ff, 0 0 3vw #1041ff, 0 0 10vw #1041ff,
+      0 0 10vw #1041ff, 0 0 0.4vw #8bfdfe, 0.5vw 0.5vw 0.1vw #147280;
+    color: #28d7fe;
+  }
+  50% {
+    text-shadow: 0 0 0.5vw #082180, 0 0 1.5vw #082180, 0 0 5vw #082180,
+      0 0 5vw #082180, 0 0 0.2vw #082180, 0.5vw 0.5vw 0.1vw #0a3940;
+    color: #146c80;
+  }
+}
+
+.neon-green {
+  margin-top: 180px;
+  font-family: neon;
+  color: #00ac17;
+  font-size: 12vw;
+  line-height: 9vw;
+  text-shadow: 0 0 3vw #23ff23;
+  animation: neon-green rgb(67, 199, 95) ar infinite;
+  -moz-animation: neon-green 2s linear infinite;
+  -webkit-animation: neon-green 2s linear infinite;
+  -o-animation: neon-green 2s linear infinite;
+}
+
+@keyframes neon-green {
+  0% {
+    transform: rotate(-7.5deg) scale(1);
+  }
+  50% {
+    transform: rotate(7.5deg) scale(1.25);
+    text-shadow: 0 0 0.5vw #17a213, 0 0 1.5vw #1dab18, 0 0 5vw #1dab18,
+      0 0 5vw rgb(20, 153, 89), 0 0 0.2vw rgb(26, 172, 48),
+      0.5vw 0.5vw 0.1vw #137429;
+    color: #1ba829;
+  }
+  100% {
+    transform: rotate(-7.5deg) scale(1);
+    text-shadow: 0 0 1vw #1dab18, 0 0 3vw #1dab18, 0 0 10vw #1dab18,
+      0 0 10vw #1dab18, 0 0 0.4vw #8bfebb, 0.5vw 0.5vw 0.1vw #148031;
+    color: #28fe2b;
+  }
+}
+
+.btn__retry {
+  background-color: #00bcd4;
+  padding: 24px;
+  border-radius: 16px;
+  box-shadow: inset 0 0 10px 8px #d0dcdd;
+  margin: 120px auto;
+  transition: all 0.5s ease-in-out;
+}
+
+.btn__retry:hover {
+  background-color: #00bcd4;
+  box-shadow: inset 0 0 10px 8px #d0dcdd;
+  transform: scale(1.1);
+}
